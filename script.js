@@ -1,4 +1,4 @@
-const adminPassword = "motdepasse123"; 
+const adminPassword = "HeilFruhmann413"; 
 
 function loginAsAdmin() {
   const pwd = document.getElementById('adminPassword').value;
