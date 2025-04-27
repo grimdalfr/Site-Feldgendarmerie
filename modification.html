@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajouter un Membre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Ajout d'un Membre - Feldgendarmerie</h1>
+  <div>
+    <button onclick="logout()">Déconnexion</button>
+    <button onclick="goToEffectif()">Retour à l'Effectif</button>
+  </div>
+</header>
+<main>
+  <form id="addMemberForm">
+    <input type="text" id="prenom" placeholder="Prénom" required>
+    <input type="text" id="nom" placeholder="Nom" required>
+    <select id="grade" required>
+      <option value="">--Choisir un grade--</option>
+      <option>Oberst</option>
+      <option>Oberstleutnant</option>
+      <option>Major</option>
+      <option>Hauptmann</option>
+      <option>Oberleutnant</option>
+      <option>Leutnant</option>
+      <option>Stabsfeldwebel</option>
+      <option>Oberfeldwebel</option>
+      <option>Feldwebel</option>
+      <option>Unterfeldwebel</option>
+      <option>Unteroffizier</option>
+      <option>Stabsgefreiter</option>
+      <option>Obergefreiter</option>
+      <option>Gefreiter</option>
+      <option>Oberfeldgendarme</option>
+      <option>Feldgendarme</option>
+    </select>
+    <button type="submit">Ajouter Membre</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<script>setupAddMemberForm();</script>
+</body>
+</html>

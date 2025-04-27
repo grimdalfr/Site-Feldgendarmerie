@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Effectif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Effectif - Feldgendarmerie</h1>
+  <div>
+    <button onclick="logout()">Déconnexion</button>
+  </div>
+</header>
+<main id="effectifContainer">
+  <!-- Les membres seront chargés ici -->
+</main>
+
+<!-- Popup Modifier -->
+<div id="editModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <h2>Modifier Membre</h2>
+    <form id="editForm">
+      <input type="text" id="editPrenom" placeholder="Prénom" required>
+      <input type="text" id="editNom" placeholder="Nom" required>
+      <select id="editGrade" required>
+        <option value="">--Choisir un grade--</option>
+        <option>Oberst</option>
+        <option>Oberstleutnant</option>
+        <option>Major</option>
+        <option>Hauptmann</option>
+        <option>Oberleutnant</option>
+        <option>Leutnant</option>
+        <option>Stabsfeldwebel</option>
+        <option>Oberfeldwebel</option>
+        <option>Feldwebel</option>
+        <option>Unterfeldwebel</option>
+        <option>Unteroffizier</option>
+        <option>Stabsgefreiter</option>
+        <option>Obergefreiter</option>
+        <option>Gefreiter</option>
+        <option>Oberfeldgendarme</option>
+        <option>Feldgendarme</option>
+      </select>
+      <button type="submit">Enregistrer</button>
+      <button type="button" onclick="closeEditModal()">Annuler</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>loadEffectif();</script>
+</body>
+</html>
