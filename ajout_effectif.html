@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ajout Effectif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <nav class="navbar">
+    <a href="dashboard.html">Retour à l'effectif</a>
+  </nav>
+  <h2>Ajouter un membre</h2>
+  <form id="addForm" class="form-container">
+    <input type="text" placeholder="Prénom" id="prenom" required />
+    <input type="text" placeholder="Nom" id="nom" required />
+    <input type="text" placeholder="SteamID" id="steamid" required />
+    <select id="grade">
+      <option>Oberst</option>
+      <option>Oberstleutnant</option>
+      <option>Major</option>
+      <option>Hauptmann</option>
+      <option>Oberleutnant</option>
+      <option>Leutnant</option>
+      <option>Stabsfeldwebel</option>
+      <option>Oberfeldwebel</option>
+      <option>Feldwebel</option>
+      <option>Unterfeldwebel</option>
+      <option>Unteroffizier</option>
+      <option>Stabsgefreiter</option>
+      <option>Obergefreiter</option>
+      <option>Gefreiter</option>
+      <option>Oberfeldgendarme</option>
+      <option>Feldgendarme</option>
+    </select>
+    <button type="submit">Ajouter</button>
+  </form>
+  <script src="ajout_effectif.js"></script>
+</body>
+</html>
